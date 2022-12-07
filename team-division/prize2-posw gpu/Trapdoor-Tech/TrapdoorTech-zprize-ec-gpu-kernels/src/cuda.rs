@@ -30,9 +30,9 @@ pub fn write_kernel<F1: PrimeField, F2: Field>(kernel_name: &str) -> GPUResult<(
        .arg("--default-stream=per-thread")
        .arg("--fatbin")
        .arg("-arch")
-       .arg("compute_86")
+       .arg("compute_75")
        .arg("-code")
-       .arg("sm_86")
+       .arg("sm_75")
        .arg("--output-file")
        .arg(kernel_name)
        .arg(&source_path);
